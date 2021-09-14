@@ -3,9 +3,9 @@ export const addNote = (note) => {
     return (dispatch, getState, { getFirestore }) => {
         // make async call to database
         const firestore = getFirestore();
-        firestore
-            .collection("notes")
-            .add({
+        console.log(firestore)
+        addDoc(collection(firestore, "notes"),
+            {
                 ...note,
                 favorite: false,
                 createdAt: new Date(),
