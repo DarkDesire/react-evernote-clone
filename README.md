@@ -11,3 +11,6 @@
 
 `npm start`
 `npm run build`
+`firebase deploy`
+
+![app.gif](app.gif)
