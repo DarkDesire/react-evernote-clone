@@ -16,9 +16,8 @@ import {
   ReactReduxFirebaseProvider,
   getFirebase,
 } from "react-redux-firebase";
-import firebase, {fbConfig} from './config/fbconfig'
-// import firebase from 'firebase/app'
-import 'firebase/auth'
+import fbConfig from './firebase'
+import firebase from "firebase/app";
 
 const store = createStore(
   rootReducer,
@@ -26,7 +25,6 @@ const store = createStore(
     applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
     reduxFirestore(fbConfig) // redux bindings for firestore
   )
-
 );
 
 const rrfProps = {

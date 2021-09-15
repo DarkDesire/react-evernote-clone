@@ -22,8 +22,8 @@ const Form = () => {
                     <label htmlFor="note_title">Note Title</label>
                 </div>
                 <div className="input-field">
-                    <textarea id="textarea1" className="materialize-textarea" {...bindContent}></textarea>
-                    <label htmlFor="textarea1">Note Content</label>
+                    <textarea id="note_content" className="materialize-textarea" {...bindContent}></textarea>
+                    <label htmlFor="note_content">Note Content</label>
                 </div>
                 <button className="btn green">Add</button>
             </form>
